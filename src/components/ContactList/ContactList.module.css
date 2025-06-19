@@ -1,0 +1,22 @@
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: flex-start;
+}
+
+.item {
+  flex: 0 1 calc(25% - 15px);
+  box-sizing: border-box;
+  border: 1px solid #000;
+  border-radius: 6px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  min-width: 240px;
+}

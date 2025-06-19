@@ -1,0 +1,50 @@
+.form {
+  border: 1px solid #ababab;
+  padding: 20px;
+  width: 320px;
+  background-color: #ffffff;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.fieldGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.label {
+  text-align: left;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #000000;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+.button {
+  padding: 8px 16px;
+  border: 1px solid #adadad;
+  background-color: #e6e6e6;
+  color: #000000;
+  font-size: 1rem;
+  cursor: pointer;
+  align-self: center;
+}
+
+.button:hover {
+  background-color: #d4d4d4;
+}
+
+.error {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: -5px;
+}
