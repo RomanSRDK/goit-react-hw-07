@@ -13,7 +13,7 @@ function App() {
   const loaderSpinner = useSelector(selectLoading);
 
   useEffect(() => {
-    dispatch(fetchContacts()); //unwrap() => даёт нам доступ к Promise нашей операции
+    dispatch(fetchContacts()); //.unwrap() => даёт нам доступ к Promise нашей операции
   }, [dispatch]);
 
   return (
