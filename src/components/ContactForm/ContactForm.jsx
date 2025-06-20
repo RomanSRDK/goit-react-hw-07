@@ -3,7 +3,6 @@ import { useId } from "react";
 import styles from "./ContactForm.module.css";
 import * as Yup from "yup";
 import { useDispatch } from "react-redux";
-import { nanoid } from "nanoid";
 import { addContact } from "../../redux/contactsOps";
 
 const validationSchema = Yup.object().shape({
@@ -39,9 +38,7 @@ function ContactForm() {
       "$1-$2-$3"
     );
 
-    dispatch(
-      addContact({ name: formattedName, number: formattedNumber, id: nanoid() })
-    );
+    dispatch(addContact({ name: formattedName, number: formattedNumber }));
 
     resetForm();
   };
